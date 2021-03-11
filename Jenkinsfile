@@ -13,8 +13,8 @@ pipeline {
 				//sh 'rm -f /var/lib/jenkins/workspace/FEI_PetClinic_RestAssuredapi/build/reports/tests/test/index.html'
 				sh """
 					JOB_NAME=${env.JOB_BASE_NAME}
-					rm -rf /var/lib/jenkins/workspace/\$JOB_NAME/build/reports/tests/test
-					cp -R /app/build/reports/tests/test/ /var/lib/jenkins/workspace/\$JOB_NAME//build/reports/tests/
+					rm -rf /var/lib/jenkins/workspace/\$JOB_NAME/build1/reports/tests/test
+					cp -R /app/build1/reports/tests/test/ /var/lib/jenkins/workspace/\$JOB_NAME//build1/reports/tests/
 
 				   """
 				//sh 'cp /app//build/reports/tests/test/index.html /var/lib/jenkins/workspace/${env.BUILD_TAG}'
@@ -25,7 +25,7 @@ pipeline {
     	}
 	post {
 		success {
-		    sh 'echo "Your test execution is done and reports will be avaible at - http://tnt-aks-automator.eastus.cloudapp.azure.com/build/reports/tests/test/index.html" in sometime.'
+		    sh 'echo "Your test execution is done and reports will be avaible at - http://tnt-aks-automator.eastus.cloudapp.azure.com/build1/reports/tests/test/index.html" in sometime.'
 		}
 		failure {
 		    echo "Please check logs for more details."
