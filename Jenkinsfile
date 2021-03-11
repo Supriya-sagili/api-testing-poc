@@ -1,8 +1,8 @@
 //Docker
 pipeline {
 	environment {
-    		def APP_NAME = "petclinicAPI - Copy (2)"
-    		def GIT_REPO_NAME = "Petclinic9296"
+    		def APP_NAME = "A750140"
+    		def GIT_REPO_NAME = "api-testing-poc"
     		def DEPLOY_ENV = "dev"
 	}
     	agent { dockerfile true }
