@@ -1,0 +1,39 @@
+s18:59:45.949 - [OnlineShopApiClient] INFO  : Initiated petclinic.api.onlineShop.data.OnlineShopApiClient instance
+-18:59:45.961 - [ApiCaller] INFO  : Request:
+eRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/clearcart
+Body:			<none>
+.18:59:48.246 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+Cart empty.
+s18:59:49.100 - [OnlineShopApiClient] INFO  : Initiated petclinic.api.onlineShop.data.OnlineShopApiClient instance
+-18:59:49.100 - [ApiCaller] INFO  : Request:
+gRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/getproducts
+Body:			<none>
+.18:59:49.734 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+‡[{"id":1,"name":"Kennel Kitchen","amount":635.00,"currency":"$"},{"id":2,"name":"Velcote Liquid","amount":318.00,"currency":"$"},{"id":3,"name":"Pedigree PRO","amount":923.00,"currency":"$"},{"id":4,"name":"Velcote Premium","amount":318.00,"currency":"$"},{"id":5,"name":"Mantra Kismis","amount":63.00,"currency":"$"},{"id":6,"name":"Haldiram Noodles","amount":320.00,"currency":"$"},{"id":7,"name":"Bingo Mad Angles ","amount":912.00,"currency":"$"},{"id":8,"name":"Bikani Rasogolla","amount":318.00,"currency":"$"}]
+Available products count : 8
+s18:59:49.827 - [OnlineShopApiClient] INFO  : Initiated petclinic.api.onlineShop.data.OnlineShopApiClient instance
+-18:59:49.832 - [ApiCaller] INFO  : Request:
+gRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/getproducts
+Body:			<none>
+.18:59:50.421 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+‡[{"id":1,"name":"Kennel Kitchen","amount":635.00,"currency":"$"},{"id":2,"name":"Velcote Liquid","amount":318.00,"currency":"$"},{"id":3,"name":"Pedigree PRO","amount":923.00,"currency":"$"},{"id":4,"name":"Velcote Premium","amount":318.00,"currency":"$"},{"id":5,"name":"Mantra Kismis","amount":63.00,"currency":"$"},{"id":6,"name":"Haldiram Noodles","amount":320.00,"currency":"$"},{"id":7,"name":"Bingo Mad Angles ","amount":912.00,"currency":"$"},{"id":8,"name":"Bikani Rasogolla","amount":318.00,"currency":"$"}]
+jAvailable product details at Index 2Response{name='Velcote Liquid', currency='$', id=2, amount='318.00'}
+s18:59:50.659 - [OnlineShopApiClient] INFO  : Initiated petclinic.api.onlineShop.data.OnlineShopApiClient instance
+-18:59:50.670 - [ApiCaller] INFO  : Request:
+eRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/addtocart
+Body:
+<{"name":"ball","currency":"$","id":"24","amount":"100.00"}
+.18:59:51.286 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+E{"id":24,"name":"ball","amount":100.00,"quantity":1,"currency":"$"}
+s18:59:51.300 - [OnlineShopApiClient] INFO  : Initiated petclinic.api.onlineShop.data.OnlineShopApiClient instance
+-18:59:51.300 - [ApiCaller] INFO  : Request:
+gRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/getproducts
+Body:			<none>
+.18:59:51.937 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+‡[{"id":1,"name":"Kennel Kitchen","amount":635.00,"currency":"$"},{"id":2,"name":"Velcote Liquid","amount":318.00,"currency":"$"},{"id":3,"name":"Pedigree PRO","amount":923.00,"currency":"$"},{"id":4,"name":"Velcote Premium","amount":318.00,"currency":"$"},{"id":5,"name":"Mantra Kismis","amount":63.00,"currency":"$"},{"id":6,"name":"Haldiram Noodles","amount":320.00,"currency":"$"},{"id":7,"name":"Bingo Mad Angles ","amount":912.00,"currency":"$"},{"id":8,"name":"Bikani Rasogolla","amount":318.00,"currency":"$"}]
+Status Code is: 200
