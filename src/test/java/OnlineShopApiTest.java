@@ -66,21 +66,8 @@ public class OnlineShopApiTest {
         softly.assertAll();
 
     }
-   /* @Test
-    public void deleteProductsFrom_CartThroughID() throws InvalidResponseException{
-        OnlineShopApiClient client = new OnlineShopApiClient(apiUrl, "/api/shop/clearcart");
-        Response createdProduct = client.createAddItemsToCart(Response.builder()
-                .name("Pen")
-                .id("12")
-                .currency("$")
-                .amount("100.00")
-                .build());
-        //System.out.println("Available products count : "+ response);
-        softly.assertThat(deleteProductsFrom_CartThroughID().getHttpStatusCode()).as("The Status code is :").isEqualTo(200);
-        softly.assertAll();
 
 
-    }*/
 //Delete Method
  @Test
     public void deleteNewOwners_throughID_ShouldDisplayDeletedId() throws InvalidResponseException {
